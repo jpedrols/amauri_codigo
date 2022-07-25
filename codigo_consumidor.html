@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title>
+        <meta charset="utf-8">
+
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,500&display=swap');
+
+            html, body{
+                font-family: 'Montserrat', sans-serif;
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: relative;
+                display: block;
+                margin: 0;
+            }
+
+            #container_pai {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background-image: url('img/fundo.png');
+                background-size: cover;
+                background-position: -200px 0;
+                background-repeat: no-repeat;
+            }
+
+            #container_texto {
+                position: relative;
+                width: 60%;
+                padding-top: 150px;
+                text-align: center;
+                margin: auto;
+            }
+
+            #container_texto #logo {
+                max-width: 50%;
+                height: auto;+
+            }
+
+            #container_texto h5 {
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+            #borda_baixo {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                background-color: #137231;
+                height: 20px;
+            }
+
+            #btt {
+                background-color: #137231;
+                padding: 20px;
+                width: 20%;
+                text-align: center;
+                color: #fff;
+                border-radius: 20px;
+                margin: auto;
+                font-weight: 700;
+            }
+
+            #btt a:visited {
+                color: white;
+            }
+
+            #btt a {
+                text-decoration: none;
+            }
+
+            @media screen and (max-device-width:640px), screen and (max-width:640px) {
+                #container_texto h5 {
+                    font-size: 30px;
+                }
+
+                #container_texto {
+                    width: 90%;
+                }
+
+                #btt {
+                    width: 50%;
+                    font-size: 25px;
+                }
+
+                #borda_baixo {
+                    height: 50px;
+                }
+
+                #btt a:visited {
+                    color: white;
+                }
+
+                #btt a {
+                    text-decoration: none;
+                }
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div id="container_pai">
+            <div id="container_texto">
+                <img id="logo" src="img/logo.png">
+                <h5>Todos os estabelecimentos comerciais do país são obrigados a manter pelo menos um exemplar do código de defesa do consumidor. Pensando nisso, a Amauri Contabilidade, está disponibilizando para download o código de defesa do consumidor para você empreendedor que preocupa com seu estabelecimento e quer estar dentro das leis.</h5>
+            </div>
+
+            <div id="btt">
+                <a href="https://www.google.com.br" target="_blank">
+                    clique aqui e faça o download
+                </a>
+            </div>
+
+            <div id="borda_baixo"></div>
+        </div>
+
+    </body>
+</html>
