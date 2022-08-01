@@ -27,19 +27,23 @@
                 background-size: cover;
                 background-position: -200px 0;
                 background-repeat: no-repeat;
-            }
+            } 
 
             #container_texto {
                 position: relative;
                 width: 60%;
-                padding-top: 150px;
+                padding-top: 50px;
                 text-align: center;
                 margin: auto;
             }
 
+            #container_texto h5 {
+                text-align: justify;
+            }
+
             #container_texto #logo {
-                max-width: 50%;
-                height: auto;+
+                max-width: 30%;
+                height: auto;
             }
 
             #container_texto h5 {
@@ -58,13 +62,12 @@
 
             #btt {
                 background-color: #137231;
-                padding: 20px;
-                width: 20%;
+                width: 40%;
                 text-align: center;
                 color: #fff;
                 border-radius: 20px;
-                margin: auto;
                 font-weight: 700;
+                padding: 20px;
             }
 
             #btt a:visited {
@@ -72,8 +75,19 @@
             }
 
             #btt a {
+                display: block;
                 color: #FFF;
                 text-decoration: none;
+            }
+
+            #container_flex {
+                display: flex;
+                
+                justify-content: space-between;
+
+                width: 70%;
+
+                margin: auto;
             }
 
             @media screen and (max-device-width:640px), screen and (max-width:640px) {
@@ -86,12 +100,13 @@
                 }
 
                 #container_texto {
-                    width: 90%;
+                    width: 80%;
                 }
 
                 #btt {
                     width: 50%;
                     font-size: 30px;
+                    margin: 0 auto 30px auto;
                 }
 
                 #borda_baixo {
@@ -106,6 +121,16 @@
                     color: #FFF;
                     text-decoration: none;
                 }
+
+                #container_flex {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+    
+                    width: 100%;
+    
+                    margin: auto;
+                }
             }
 
         </style>
@@ -116,13 +141,21 @@
         <div id="container_pai">
             <div id="container_texto">
                 <img id="logo" src="img/logo.png">
-                <h5>Todos os estabelecimentos comerciais do país são obrigados a manter pelo menos um exemplar do código de defesa do consumidor. Pensando nisso, a Amauri Contabilidade, está disponibilizando para download o código de defesa do consumidor para você empreendedor que preocupa com seu estabelecimento e quer estar dentro das leis.</h5>
+                <h5>Todos os estabelecimentos comerciais do país são obrigados a manter pelo menos um exemplar do código de defesa do consumidor. Pensando nisso, a Amauri Contabilidade, está disponibilizando para download o código de defesa do consumidor e a placa de sinalização. <br> Para você empreendedor que preocupa com seu estabelecimento e quer estar dentro das leis. <br><br> -> Baixe, imprima e coloque a placa de sinalização, em local bem visível em seu estabelecimento. <br><br> -> Imprima o código de defesa do consumidor, e deixe disponível para consulta</h5>
             </div>
 
-            <div id="btt">
-                <a href="https://www.google.com.br" target="_blank">
-                    Baixar Código do Consumidor
-                </a>
+            <div id="container_flex">
+                <div id="btt">
+                    <a href="https://www.google.com.br" target="_blank" style="word-break: nobreak">
+                        Baixar placa de sinalização
+                    </a>
+                </div>
+
+                <div id="btt">
+                    <a href="https://www.google.com.br" target="_blank">
+                        Baixar Código de Defesa do Consumidor
+                    </a>
+                </div>
             </div>
 
             <div id="borda_baixo"></div>
