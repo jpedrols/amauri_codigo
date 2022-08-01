@@ -4,7 +4,7 @@
     <head>
         <title>Amauri Contabilidade - Código de defesa do consumidor</title>
         <meta charset="utf-8">
-        <link rel="shortcut icon" href="http://amauricontabilidade.com/imagens/icon.ico" />
+        <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
 
         
         <style>
@@ -13,7 +13,7 @@
             html, body{
                 font-family: 'Montserrat', sans-serif;
                 display: block;
-                min-height: 750px;
+                min-height: 850px;
                 height: 100%;
                 width: 100%;
                 position: relative;
@@ -70,7 +70,6 @@
                 color: #fff;
                 border-radius: 20px;
                 font-weight: 700;
-                padding: 20px;
             }
 
             #btt a:visited {
@@ -81,6 +80,7 @@
                 display: block;
                 color: #FFF;
                 text-decoration: none;
+                padding: 20px;
             }
 
             #container_flex {
@@ -88,7 +88,7 @@
                 
                 justify-content: space-between;
 
-                width: 70%;
+                width: 50%;
 
                 margin: auto;
             }
@@ -111,7 +111,7 @@
                 }
 
                 #btt {
-                    width: 50%;
+                    width: 100%;
                     font-size: 30px;
                     margin: 0 auto 30px auto;
                 }
@@ -134,7 +134,7 @@
                     flex-wrap: wrap;
                     justify-content: space-between;
     
-                    width: 100%;
+                    width: 50%;
     
                     margin: auto;
                 }
@@ -153,13 +153,13 @@
 
             <div id="container_flex">
                 <div id="btt">
-                    <a href="placa.zip" download target="_blank" style="word-break: nobreak">
-                        Baixar placa de sinalização
+                    <a href="placa.zip" download target="_blank" style="word-break: nobreak" onClick="download()">
+                        Baixar placa <br> de sinalização
                     </a>
                 </div>
 
                 <div id="btt">
-                    <a href="codigo.docx" download target="_blank">
+                    <a href="codigo.docx" download target="_blank" onClick="download()">
                         Baixar Código de Defesa do Consumidor
                     </a>
                 </div>
@@ -170,3 +170,13 @@
     </body>
     <div id="borda_baixo"></div>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+    function download() {
+        toastr.warning('Caso não esteja conseguindo realizar o download, abra o link pelo navegador do seu dispositivo', 'Atenção')
+    }
+    
+</script>
