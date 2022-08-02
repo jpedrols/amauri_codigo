@@ -153,13 +153,13 @@
 
             <div id="container_flex">
                 <div id="btt">
-                    <a href="placa.zip" download target="_blank" style="word-break: nobreak" onClick="download()">
+                    <a href="placa.zip" download target="_blank" style="word-break: nobreak" onClick="alerta()">
                         Baixar placa <br> de sinalização
                     </a>
                 </div>
 
                 <div id="btt">
-                    <a href="codigo.docx" download target="_blank" onClick="download()">
+                    <a href="codigo.docx" download target="_blank" onClick="alerta()">
                         Baixar Código de Defesa do Consumidor
                     </a>
                 </div>
@@ -175,8 +175,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 <script>
-    function download() {
+    function alerta() {
+        alert('oi');
         toastr.warning('Caso não esteja conseguindo realizar o download, abra o link pelo navegador do seu dispositivo', 'Atenção')
     }
-    
 </script>
